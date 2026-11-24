@@ -1,0 +1,13 @@
+[project]
+name = "seguros"
+version = "2.0.0"
+description = "DDD em uma única API, contextos conversando por HTTP (versão Python do DDDWithHttpV2)"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+# "src" para achar o pacote "seguros" e "." para achar "tests.integration.apoio".
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+# Todo teste "async def" roda automaticamente num event loop do asyncio.
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"

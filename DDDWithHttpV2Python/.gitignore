@@ -1,0 +1,15 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache do Python e do pytest
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editores
+.vscode/
+.idea/
+
+# Arquivo local com sobrescritas pessoais (não versionar)
+config/local.env

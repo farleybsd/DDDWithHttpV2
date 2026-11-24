@@ -1,0 +1,20 @@
+# Pacotes necessários para RODAR a API.
+# Instale com:  pip install -r requirements.txt
+
+# Framework web (equivale ao ASP.NET Core + FastEndpoints): rotas, injeção de dependência
+# (Depends), validação do corpo da requisição e documentação OpenAPI/Swagger automática.
+fastapi>=0.115
+
+# Servidor ASGI que executa a aplicação (equivale ao Kestrel).
+uvicorn[standard]>=0.30
+
+# Validação e serialização de dados (equivale aos records + System.Text.Json + FluentValidation).
+# Já vem como dependência do FastAPI, mas deixamos explícito porque usamos muito.
+pydantic>=2.11
+
+# Configuração tipada a partir de arquivos .env e variáveis de ambiente
+# (equivale ao appsettings.{Ambiente}.json + IOptions<T>).
+pydantic-settings>=2.6
+
+# Cliente HTTP assíncrono (equivale ao HttpClient). É ele que faz Sinistros -> Apólices.
+httpx>=0.27
